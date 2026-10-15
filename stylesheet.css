@@ -1,0 +1,67 @@
+.disk-space-panel {
+  spacing: 10px;
+}
+
+.disk-space-panel-item {
+  spacing: 3px;
+}
+
+.disk-space-mini-track {
+  width: 6px;
+  height: 14px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.disk-space-warn {
+  color: #f8e45c;
+}
+
+.disk-space-critical {
+  color: #ff7b63;
+  font-weight: bold;
+}
+
+.disk-space-menu-item {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.disk-space-menu-title {
+  font-weight: bold;
+}
+
+.disk-space-menu-device,
+.disk-space-menu-details {
+  font-size: 0.9em;
+}
+
+.disk-space-track {
+  height: 8px;
+  margin: 5px 0 4px 0;
+  border-radius: 4px;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.disk-space-fill {
+  height: 8px;
+  border-radius: 4px;
+}
+
+.disk-space-mini-track > .disk-space-fill-ok,
+.disk-space-mini-track > .disk-space-fill-warn,
+.disk-space-mini-track > .disk-space-fill-critical {
+  border-radius: 2px;
+}
+
+.disk-space-fill-ok {
+  background-color: #57e389;
+}
+
+.disk-space-fill-warn {
+  background-color: #f8e45c;
+}
+
+.disk-space-fill-critical {
+  background-color: #ff7b63;
+}

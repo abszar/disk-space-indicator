@@ -1,0 +1,7 @@
+{
+  "uuid": "disk-space-indicator@abdelali",
+  "name": "Disk Space Indicator",
+  "description": "Shows how full each mounted partition is in the top bar, with details on click.",
+  "shell-version": ["46"],
+  "version": 1
+}

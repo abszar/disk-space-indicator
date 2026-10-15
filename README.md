@@ -8,6 +8,7 @@ GNOME Shell 46 extension that shows how full each mounted partition is in the to
 
 - Each mini bar is green below 80%, yellow from 80%, red from 90%.
 - Click it for used / total / free per partition, plus shortcuts to Disk Usage Analyzer and Disks.
+- Click a partition in that menu to open it in Files.
 - Partitions are detected automatically from `/proc/self/mounts`: local `/dev/*` partitions of 1 GB or more.
   Snaps, FUSE mounts (pCloud, AppImages), network shares and optical media are skipped.
 - Refreshes every 30 seconds and each time the menu opens. All reads are asynchronous.

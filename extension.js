@@ -139,7 +139,7 @@ class DiskSpaceIndicator extends PanelMenu.Button {
     }
 
     _menuItemFor(disk, level) {
-        const item = new PopupMenu.PopupBaseMenuItem({reactive: false, style_class: 'disk-space-menu-item'});
+        const item = new PopupMenu.PopupBaseMenuItem({style_class: 'disk-space-menu-item'});
         const box = new St.BoxLayout({vertical: true, x_expand: true});
 
         const title = new St.BoxLayout();
@@ -164,7 +164,17 @@ class DiskSpaceIndicator extends PanelMenu.Button {
         }));
 
         item.add_child(box);
+        item.connect('activate', () => this._openFolder(disk.mountPoint));
         return item;
+    }
+
+    _openFolder(path) {
+        try {
+            Gio.AppInfo.launch_default_for_uri(
+                Gio.File.new_for_path(path).get_uri(), global.create_app_launch_context(0, -1));
+        } catch (e) {
+            Main.notify('Disk Space', `Cannot open ${path}: ${e.message}`);
+        }
     }
 
     _launch(desktopId) {

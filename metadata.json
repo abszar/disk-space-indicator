@@ -1,7 +1,8 @@
 {
-  "uuid": "disk-space-indicator@abdelali",
+  "uuid": "disk-space-indicator@abszar.github.io",
   "name": "Disk Space Indicator",
   "description": "Shows how full each mounted partition is in the top bar, with details on click.",
   "shell-version": ["46"],
+  "url": "https://github.com/abszar/disk-space-indicator",
   "version": 1
 }

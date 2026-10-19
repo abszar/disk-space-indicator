@@ -17,7 +17,7 @@ function check(name, actual, expected) {
 const MOUNTS = `/dev/nvme0n1p5 / ext4 rw,relatime 0 0
 /dev/loop0 /snap/bare/5 squashfs ro,nodev,relatime 0 0
 proc /proc proc rw 0 0
-pCloud.fs /home/abdelali/pCloudDrive fuse rw 0 0
+pCloud.fs /home/user/pCloudDrive fuse rw 0 0
 Vicinae.AppImage /tmp/.mount_Vicina fuse.Vicinae.AppImage ro 0 0
 /dev/nvme0n1p7 /mnt/games ext4 rw,relatime 0 0
 /dev/nvme0n1p8 /mnt/data ext4 rw,relatime 0 0
